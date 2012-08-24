@@ -43,7 +43,7 @@ de:
       events:
         show:
           other: Andere Events
-          event_details: Detaills
+          event_details: Details
           start: 'Beginn %{when}'
           end: 'Bis %{when}'
           view_on_map: Auf einer Karte anschauen
@@ -52,7 +52,7 @@ de:
     attributes:
       refinery/calendar/venue:
         name: Name
-        address: Addresse
+        address: Adresse
         url: Url
         phone: Telefon
       refinery/calendar/event:
