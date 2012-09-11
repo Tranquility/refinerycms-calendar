@@ -21,7 +21,7 @@
     <p><%= link_to t('register', :scope => 'refinery.calendar.events.show'), @event.registration_link %></p>
   <% end -%>
 
-  <% if @event.venue.url.present? %>
+  <% if @event.venue_url.present? %>
     <p><%= link_to t('venue_url', :scope => 'refinery.calendar.events.show'), @event.venue.url %></p>
   <% end -%>
 
