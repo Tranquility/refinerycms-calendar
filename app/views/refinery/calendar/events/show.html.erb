@@ -1,4 +1,4 @@
-<% content_for :body_content_title do %>
+<% content_for :title do %>
   <%= @event.title %>
 <% end %>
 
@@ -7,13 +7,13 @@
   <h5><%= @event.venue_name %></h5>
 
   <p>
-    <time datetime="<%=l @event.from, :format => :default %>" class='posted_at'> 
-      <%= t('start', :scope => 'refinery.calendar.events.show', :when => l(@event.from.to_datetime, :format => :long)) %>
+    <time datetime="<%=l @event.start_at, :format => :default %>" class='posted_at'>
+      <%= t('start', :scope => 'refinery.calendar.events.show', :when => l(@event.start_at.to_datetime, :format => :long)) %>
     </time>
   </p>
   <p>
-    <time datetime="<%=l @event.from, :format => :default %>" class='posted_at'> 
-      <%= t('end', :scope => 'refinery.calendar.events.show', :when => l(@event.from.to_datetime, :format => :long)) %>
+    <time datetime="<%=l @event.start_at, :format => :default %>" class='posted_at'>
+    <%= t('end', :scope => 'refinery.calendar.events.show', :when => l(@event.end_at.to_datetime, :format => :long)) %>
     </time>
   </p>
 
