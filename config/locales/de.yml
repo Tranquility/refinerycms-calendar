@@ -1,4 +1,7 @@
 de:
+  time:
+    formats:
+      short: "%d %b, %Y %H:%M"
   refinery:
     plugins:
       venues:

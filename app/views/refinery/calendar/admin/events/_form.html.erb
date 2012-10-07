@@ -18,12 +18,12 @@
 
   <div class='field'>
     <%= f.label :start_at -%>
-    <%= f.text_field :start_at, :class => 'datetime_range'  -%>
+    <%= f.text_field :start_at, :class => 'datetime_range', :value => ( l(@event.start_at, :format => :short) if @event.start_at)   -%>
   </div>
 
   <div class='field'>
     <%= f.label :end_at -%>
-    <%= f.text_field :end_at, :class => 'datetime_range'  -%>
+    <%= f.text_field :end_at, :class => 'datetime_range', :value => ( l(@event.end_at, :format => :short) if @event.end_at) -%>
   </div>
 
   <div class='field'>
