@@ -49,6 +49,7 @@ de:
           event_details: Details
           start: 'Beginn %{when}'
           end: 'Bis %{when}'
+          venue_phone: Telefon
           view_on_map: Auf einer Karte anschauen
           register: Für dieses Event anmelden
   activerecord:

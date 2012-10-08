@@ -15,7 +15,7 @@ module Refinery
                       :venue_id, :excerpt, :description,
                       :featured, :position
 
-      delegate :name, :address, :url,
+      delegate :name, :address, :url, :phone,
                 :to => :venue,
                 :prefix => true,
                 :allow_nil => true

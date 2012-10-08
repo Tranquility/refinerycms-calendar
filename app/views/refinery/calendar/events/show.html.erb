@@ -25,6 +25,10 @@
     <p><%= link_to t('venue_url', :scope => 'refinery.calendar.events.show'), @event.venue.url %></p>
   <% end -%>
 
+  <% if @event.venue_phone.present? %>
+    <p><%= "#{t('venue_phone', :scope => 'refinery.calendar.events.show')}: #{@event.venue.phone}" %></p>
+  <% end -%>
+
   <% if @event.venue_address.present? %>
     <p><%= link_to t('view_on_map', :scope => 'refinery.calendar.events.show'), "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=#{CGI::escape(@event.venue.address)}&ie=UTF8&z=16" %></p>
   <% end -%>
