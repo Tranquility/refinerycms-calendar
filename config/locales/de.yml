@@ -60,8 +60,8 @@ de:
         phone: Telefon
       refinery/calendar/event:
         title: Titel
-        from: Von
-        to: Bis
+        start_at: Von
+        end_at: Bis
         registration_link: Registrierungs Link
         venue: Veranstaltungsort
         venue_none: Keine Angabe
